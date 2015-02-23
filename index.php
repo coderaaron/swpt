@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title><?php wp_title(); ?></title>
 <?php 
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
