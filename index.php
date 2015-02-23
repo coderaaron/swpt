@@ -13,7 +13,13 @@
  ?>
 </head>
 <body>
-	
+
+<?php if ( have_posts() ) : 
+	while ( have_posts() ) : 
+		the_post();
+	endwhile;
+endif; ?>
+
 </body>
 <?php
 	/* Always have wp_footer() just before the closing </body>
