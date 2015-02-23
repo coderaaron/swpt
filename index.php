@@ -3,8 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+<?php 
+	/* Always have wp_head() just before the closing </head>
+	 * tag of your theme, or you will break many plugins, which
+	 * generally use this hook to add elements to <head> such
+	 * as styles, scripts, and meta tags.
+	 */
+	wp_head();
+ ?>
 </head>
 <body>
 	
 </body>
+<?php
+	/* Always have wp_footer() just before the closing </body>
+	 * tag of your theme, or you will break many plugins, which
+	 * generally use this hook to reference JavaScript files.
+	 */
+	wp_footer();
+?>
 </html>
